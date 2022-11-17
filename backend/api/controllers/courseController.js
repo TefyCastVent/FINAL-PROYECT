@@ -66,6 +66,7 @@ const createCourse = async (req, res) => {
     }
   };
   
+    
   const deleteCourseById = async (req, res) => {
     try{
       const { id } = req.params;

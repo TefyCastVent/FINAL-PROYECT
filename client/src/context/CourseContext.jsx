@@ -15,11 +15,11 @@ const ContextProvider = ({children}) => {
     if (filtered.length === 0) {
       setFilterCourses([])
       setSms({type: 'error',
-              message: 'Search not found'})
+              message: 'Busqueda no encontrada '})
     } else {
       setFilterCourses(filtered)
       setSms({type: 'success',
-              message: 'Search found'})
+              message: 'Se encontró '})
     }
   }
 

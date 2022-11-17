@@ -5,13 +5,13 @@ const CoursesSearch = () => {
     const {filterCourses,sms} = useCourseContext()
     const long = filterCourses.length
     if (sms.type === 'error'){
-        return (<p className='alert alert-danger' role='alert'>{sms.message}: {long} coincidences</p>)
+        return (<p className='alert alert-danger' role='alert'>{sms.message}: {long} coincidencias</p>)
     }
     
     if (sms.type === 'success'){
         return (
           <div>
-            <p className='alert alert-success' role='alert'>{sms.message} : {long} coincidences</p>
+            <p className='alert alert-success' role='alert'>{sms.message} : {long} coincidencias</p>
             <CoursesList coursesList={filterCourses} />
           </div>
         )}
